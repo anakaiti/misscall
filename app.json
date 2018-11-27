@@ -1,0 +1,33 @@
+{
+    "name": "misscall",
+    "description": "Call a phone number when a webhook is received",
+    "keywords": [
+      "flask",
+      "python",
+      "twilio"
+    ],
+    "repository": "https://github.com/anakaiti/misscall",
+    "env": {
+        "TWILIO_ACCOUNT_SID": {
+            "description": "Your twilio account SID",
+            "value": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        },
+        "TWILIO_AUTH_TOKEN": {
+            "description": "Your twilio account auth token",
+            "value": "your_auth_token"
+        },
+        "CALL_TO": {
+            "description": "Your twilio caller phone number in E.164 format",
+            "value": "+6285794951332"
+        },
+        "CALL_FROM": {
+            "description": "The number that you want to call in E.164 format",
+            "value": "+622114045"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
